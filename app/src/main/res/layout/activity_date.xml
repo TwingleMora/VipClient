@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="375dp">
+
+    <CalendarView
+        android:id="@+id/activity_date_calender_access"
+        android:layout_width="match_parent"
+        android:layout_height="321dp"
+        android:outlineSpotShadowColor="#FFF"
+        android:background="@android:color/holo_red_light"
+
+        >
+
+    </CalendarView>
+
+    <Button
+        android:id="@+id/activity_date_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_date_calender_access"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/borders"
+        android:layout_marginStart="15dp"
+        android:text="Close"
+        android:textColor="#FFFF" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogOrdersList">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/log_orders_list"
+            android:layout_width="match_parent"
+            android:layout_height="426dp"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/log_orders_list"
+            android:layout_alignParentEnd="true"
+            android:text="Total Cash"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/log_total_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/log_date"
+            android:text="000"
+            android:paddingEnd="5dp"
+            android:gravity="right"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/log_date"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="yyyy/mm/dd"
+
+            android:textColor="#FF5722"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/log_open_calender_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borders"
+            android:padding="5dp"
+            android:text="Choose Day"
+            android:textColor="#FCFCFC" />
+
+        <Button
+            android:id="@+id/log_best_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@id/log_run_calender_switch"
+            android:background="@drawable/borders"
+            android:padding="5dp"
+            android:text="Best Sellers"
+            android:textColor="#FCFCFC" />
+
+
+        <Switch
+            android:id="@+id/log_run_calender_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:padding="10dp"
+            android:text="Show All   "
+
+            android:textColor="#FFF" />
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

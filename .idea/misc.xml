@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/drawable/ic_close_black_24dp.xml" value="0.12777777777777777" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout-land/client_data.xml" value="0.22072072072072071" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/activity_add_order.xml" value="0.2" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/activity_date.xml" value="0.264" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/activity_log_orders_list.xml" value="0.264" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/activity_modify_menu.xml" value="0.11342592592592593" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/adapter_view_layout.xml" value="0.4" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/client_data.xml" value="0.11342592592592593" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/custom_client_list.xml" value="0.2" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/layout/custom_menu_list.xml" value="0.264" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/menu/add_client_button.xml" value="0.264" />
+        <entry key="..\:/Careeeeeeeeeer/projects/Android/Projects/Casher/app/src/main/res/menu/main_menu.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

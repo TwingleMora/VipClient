@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F1B24</color>
+    <color name="colorPrimaryDark">#000101</color>
+    <color name="colorWindowBackground">#121212</color>
+    <color name= "textColor">#FFFFFF</color>
+    <color name= "buttonBackGround">#59585A</color>
+    <color name="colorAccent">#42B2DF</color>
+    <color name="dateColor">#353131</color>
+    <color name="error">#DB2C2C</color>
+    <color name="normal_text_color">#FFF</color>
+</resources>

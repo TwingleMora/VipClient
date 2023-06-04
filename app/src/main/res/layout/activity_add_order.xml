@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddOrder">
+
+    <RelativeLayout
+
+
+        android:id="@+id/Corners"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.picture.nasa.nasadailyimage.NasaDailyImage"
+        tools:showIn="@layout/activity_add_order">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="98dp"
+            android:layout_height="43dp"
+
+            android:layout_below="@id/nameTxt"
+            android:layout_marginTop="29dp"
+            android:gravity="center"
+            android:text="Address"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addressTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="26dp"
+            android:layout_below="@id/nameTxt"
+            android:layout_marginEnd="36dp"
+            android:layout_toEndOf="@id/textView8"
+            android:ems="10"
+            android:foregroundGravity="center"
+
+            android:hint="Client Address"
+            android:inputType="textPersonName"
+            android:textColor="#FFFF"
+            android:textColorHint="#A5A5A5" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="98dp"
+            android:layout_height="43dp"
+
+            android:layout_below="@id/textView8"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:text="Paid :"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="98dp"
+            android:layout_height="43dp"
+
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/nameTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/paidTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressTxt2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_toEndOf="@id/textView"
+
+            android:ems="10"
+            android:imeOptions = "actionDone"
+            android:foregroundGravity="center"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFF"
+            android:textColorHint="#A5A5A5" />
+
+        <EditText
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:ems="10"
+            android:layout_toEndOf="@id/textView5"
+            android:foregroundGravity="center"
+            android:hint="@string/client_name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFF"
+
+            android:textColorHint="#A5A5A5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Search"
+    android:imeOptions = "actionDone"
+    android:singleLine="true"
+    android:gravity="center"
+
+    android:textColorHint="#797575"
+android:layout_marginTop="25dp"
+    android:id="@+id/item_search"
+    android:textColor="#FFFF"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@id/remainDisplay"
+    />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MenuView"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+
+            android:layout_below="@id/textView3"
+
+
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+
+            tools:listitem="@layout/custom_menu_list" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/DisplayOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refresh_prices_btn"
+            android:layout_marginTop="10dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+          android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/selected_items"
+            android:textColor="@color/textColor"
+            android:layout_below="@id/MenuView"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/items_counter"
+            android:textSize="18sp"
+            android:text="Empty!"
+
+            android:textColor="#FFF"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/MenuView"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_search"
+
+android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/m_e_n_u"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/orders_Price"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/remainDisplay"
+            app:layout_constraintTop_toBottomOf="@+id/paidTxt" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paidTxt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center"
+            android:text="$$"
+            android:textColor="#0DB813"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/remainDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paidTxt"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="000"
+
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="78dp"
+            android:layout_height="29dp"
+      android:layout_marginTop="15dp"
+            android:paddingStart="5dp"
+            android:text="Remain"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+android:layout_below="@id/textView"
+         />
+
+        <TextView
+            android:id="@+id/orders_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView7"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@id/textView4"
+            android:gravity="center"
+            android:text="000"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/refresh_prices_btn"
+            android:layout_width="82dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/borders"
+            android:text="Refresh Prices"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/MenuView"
+         />
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+

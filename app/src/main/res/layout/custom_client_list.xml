@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="6dp"
+    app:cardCornerRadius="6dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/colorAccent"
+    >
+
+    <RelativeLayout
+        android:background="@color/buttonBackGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+
+            android:id="@+id/client_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=" "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+           android:paddingStart="5dp"
+            android:text="Name : "
+            android:textColor="#FFFF"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+<TextView
+    android:id="@+id/client_name_display"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toStartOf="@id/client_priority"
+    android:layout_toEndOf="@id/client_name"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:ellipsize="end"
+    android:textColor="#FFFF"
+
+    android:maxLines="1"
+    android:text=" "
+
+    />
+        <TextView
+            android:id="@+id/client_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/client_name"
+            android:layout_alignParentStart="true"
+            android:paddingStart="5dp"
+
+            android:text="Total Price :      "
+            android:textColor="#FFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/client_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/client_name"
+            android:textColor="#FFFF"
+
+            android:layout_marginTop="0dp"
+
+            android:layout_toLeftOf="@id/client_remain_display"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:text="Remain : "
+
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/client_remain_display"
+            android:text="00"
+            android:textColor="#FFFF"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/client_priority"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingStart="5dp"
+
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/client_price_display"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/client_name"
+            android:layout_marginTop="0dp"
+
+
+            android:layout_toRightOf="@id/client_price"
+android:layout_toStartOf="@+id/client_remain"
+            android:layout_toEndOf="@id/client_price"
+            android:text="00"
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/client_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/client_price"
+            android:layout_alignParentStart="true"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="8dp"
+android:layout_marginTop="5dp"
+            android:textColor="#D5C8C8"
+            android:text="yyyy-mm-dd HH:mm:ss"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

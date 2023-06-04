@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VIP Client</string>
+    <string name="done">done</string>
+    <string name="name">Name :</string>
+    <string name="newname">Name</string>
+    <string name="newprice">Price</string>
+    <string name="newtype">Type</string>
+    <string name="client_name">Client Name</string>
+    <string name="selected_items">Selected Items</string>
+    <string name="m_e_n_u">M E N U</string>
+</resources>
